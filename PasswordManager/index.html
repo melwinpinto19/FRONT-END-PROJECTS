@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="nav-bar">
+      <div class="logo"><h1>PSX</h1></div>
+      <div class="links">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Login</li>
+      </div>
+    </div>
+    <div class="passwords">
+      <div class="heading"><h2>Your Passwords</h2></div>
+      <div class="passwords-main">
+        <div class="data">
+          <div class="data1">Website</div>
+          <div class="data2">Username</div>
+          <div class="data3" style="flex-grow: 1;">Password</div>
+        </div>
+      </div>
+    </div>
+    <div class="add-passwords">
+      <div class="apw-head"><h1>Add Password</h1></div>
+      <div class="main">
+        <div class="website">
+          <label for="website">Website:</label>
+          <input type="text" id="website" style="margin-left: 10px;"/>
+        </div>
+        <div class="username">
+          <label for="username">username:</label>
+          <input type="text" id="username" />
+        </div>
+        <div class="password">
+          <label for="password">password:</label>
+          <input type="password" id="password" />
+        </div>
+        <div class="submit-btn" style="justify-content: center;">
+            <button id="btn">Submit</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
