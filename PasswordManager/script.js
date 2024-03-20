@@ -26,7 +26,7 @@ document.querySelector("#btn").addEventListener("click", () => {
     ele.addEventListener("click", () => {
       let i = ele.parentNode.getAttribute("id");
       let text = localStorage.getItem(`${i}`).split(" ");
-      navigator.clipboard.writeText = text[2];
+      navigator.clipboard.writeText(text[2]);
       console.log(text[2]);
     });
   });
@@ -71,7 +71,7 @@ function fun() {
     ele.addEventListener("click", () => {
       let i = ele.parentNode.getAttribute("id");
       let text = localStorage.getItem(`${i}`).split(" ");
-      navigator.clipboard.writeText (text[2]);
+      navigator.clipboard.writeText(text[2]);
       console.log(text[2]);
     });
   });

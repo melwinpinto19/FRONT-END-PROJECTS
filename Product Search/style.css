@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-bar {
+  height: 7vh;
+  background-color: blanchedalmond;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav-bar input {
+  outline: none;
+  height: 4vh;
+  width: 40vw;
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+}
+
+.stl {
+  border: 5px solid blue;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+img {
+  height: 250px;
+  width: 200px;
+  transition: all 1s linear;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 160px;
+  /* background:linear-gradient(black,white); */
+  padding-left: 30px;
+  margin-top: 10px;
+  background-color: transparent;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  gap: 30px;
+}
+ul > li {
+  list-style: none;
+}
+.ic {
+  flex-direction: column;
+  position: relative;
+  margin-top: 30px;
+}
+.icon {
+  display: none;
+  padding: 5px 20px;
+  font-size: 24px;
+}
+
+.box1 {
+  height: 93vh;
+}
+
+.icon-next {
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  right: -200px;
+  background-color: aqua;
+  /* display: none; */
+  display: flex;
+  justify-content: center;
+}
+
+.cancel {
+  height: 30px;
+  width: 50px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  position: absolute;
+}
+
+.box1 {
+  position: absolute;
+  height: 93vh;
+  width: 100vw;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  filter: blur(20%);
+  display: none;
+}
+.j-c {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn1 {
+  border: none;
+  height: 30px;
+  width: 30px;
+  background-color: blue;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.cart-section {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.cart-main {
+  margin-top: 20px;
+  background: linear-gradient(to right, red, blue);
+}
+
+@media (max-width: 735px) {
+  .nav-bar ul {
+    display: none;
+  }
+
+  .search input {
+    width: 60vw;
+  }
+
+  .icon {
+    display: block;
+  }
+}
